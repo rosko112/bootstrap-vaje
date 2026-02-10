@@ -90,35 +90,6 @@ Stran je v celoti responsive in deluje odličnih na:
 - **Tabletih** (576px - 768px): 2 stolpca
 - **Desktopih** (> 768px): 3 ali 4 stolpci
 
-## 🖼️ Slike
-
-Vse slike so pridobljene iz **Unsplash** CDN:
-- Hrana (burgerji, azijska kuhinja, sladice)
-- Kuharji
-- Festival prizori
-
-Slike so optimizirane za hitro nalaganje z določenimi dimenzijami.
-
-## 🔒 Validacija obrazca
-
-- **Ime in priimek**: Obavezno polje
-- **Email**: Veljavna email naslov (regex: `^[^\s@]+@[^\s@]+\.[^\s@]+$`)
-- **Število oseb**: Izbrano iz drop-down menuja
-- **Datum in ura**: Obavezno polje
-- **Posebne zahteve**: Opciono polje
-
-## 💾 LocalStorage
-
-Rezervacije se shranjujejo v localStorage z naslednjimi informacijami:
-- ID (timestamp)
-- Ime in priimek
-- Email
-- Število oseb
-- Datum in ura
-- Posebne zahteve
-- Status
-- Čas kreiranja
-
 ## 🌐 Brskalniki
 
 Stran je testirana in deluje na:
@@ -153,26 +124,6 @@ Stran je testirana in deluje na:
 Bootstrap - MIT License
 Bootstrap Icons - MIT License
 Unsplash slike - Besplatno za uporabo
-
-## ✅ Zahteve projekta - Uresničeno
-
-✓ Sticky navbar s povezavami
-✓ Logo v navbar-ju
-✓ Hero carousel s 3+ slikami
-✓ Overlay tekst čez slike
-✓ Avtomatsko drsenje slik
-✓ Grid layout (3/2/1 stolpci)
-✓ Responsive dizajn
-✓ Rezervacijski obrazec s validacijo
-✓ Kontaktni podatki
-✓ Google Map
-✓ Socialni mediji ikone
-✓ Footer s copyright-om
-✓ HTML5 semantična struktura
-✓ Bootstrap 5 za postavitev
-✓ JavaScript za validacijo
-✓ Custom CSS (style.css)
-✓ Dodatne strani (About, Reservations)
 
 ---
 
