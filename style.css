@@ -52,7 +52,7 @@ body {
 }
 
 .carousel-image-3 {
-    background-image: url('https://images.unsplash.com/photo-1545521521-c81c6c10f79c?w=1200&h=600&fit=crop');
+    background-image: url('https://simplegreenmoms.com/wp-content/uploads/2021/07/easy-desserts-to-make-at-home.jpg?w=1200&h=600&fit=crop');
 }
 
 .carousel-overlay {
@@ -200,9 +200,15 @@ section h2::after {
 }
 
 .invalid-feedback {
-    display: block;
+    display: none;
     color: var(--primary-color);
     font-size: 0.875rem;
+}
+
+/* Show invalid feedback only when the control has the is-invalid class */
+.form-control.is-invalid ~ .invalid-feedback,
+.form-select.is-invalid ~ .invalid-feedback {
+    display: block;
 }
 
 /* BUTTONS */
