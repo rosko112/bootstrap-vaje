@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival hrane 2025</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-fire"></i> Festival hrane 2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Domov</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">O festivalu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Moje rezervacije</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <!-- HERO CAROUSEL -->
+        <div id="carouselFestival" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselFestival" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselFestival" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-image-1">
+                    <div class="carousel-overlay">
+                        <h1 class="carousel-title">Najboljši burgerji v mestu</h1>
+                        <a href="contact.html" class="btn btn-danger btn-lg">Rezerviraj mizo</a>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2">
+                    <div class="carousel-overlay">
+                        <h1 class="carousel-title">Azijska kuhinja</h1>
+                        <a href="contact.html" class="btn btn-danger btn-lg">Poglej ponudbo</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFestival" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselFestival" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- KAJ PONUJAMO SECTION -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Kaj ponujamo?</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=350&fit=crop" class="card-img-top img-fluid rounded-3" alt="Burgerji">
+                            <div class="card-body">
+                                <h5 class="card-title">Burgerji</h5>
+                                <p class="card-text">Okusni burgerji iz hviezdne kakovosti govejega mesa s svežimi ingrediencami. Vsak burger je narejen s ljubeznijo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=350&fit=crop" class="card-img-top img-fluid rounded-3" alt="Azijska kuhinja">
+                            <div class="card-body">
+                                <h5 class="card-title">Azijska kuhinja</h5>
+                                <p class="card-text">Avtentična azijska jedila s posebnimi začimbami. Od tajske do japonske kulinarike, vse v enem mestu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=350&fit=crop" class="card-img-top img-fluid rounded-3" alt="Sladice">
+                            <div class="card-body">
+                                <h5 class="card-title">Sladice</h5>
+                                <p class="card-text">Domačih sladice in sveži napitki. Čokoladni kosila, pite, sladoledi in še kaj je na voljo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLAVNI KUHARJI SECTION -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Glavni kuharji</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card text-center shadow-sm">
+                            <img src="https://www.solaokusov.si/wp-content/uploads/2015/09/andrej-kuhar-foto-janez-puksic-resized1.jpg" class="card-img-top img-fluid" alt="Kuhinja 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Marko Novak</h5>
+                                <p class="card-text"><strong>Mojster za rebrca</strong></p>
+                                <p class="card-text text-muted">Več kot 20 let izkušenj v pripravi tradicionalnih hran.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card text-center shadow-sm">
+                            <img src="https://srednjesole.aktualno.si/wp-content/uploads/2024/01/Shutterstock_1921924586.jpg" class="card-img-top img-fluid" alt="Kuhinja 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Ana Kovač</h5>
+                                <p class="card-text"><strong>Specialist za azijsko kuhinjo</strong></p>
+                                <p class="card-text text-muted">Naučena v Bangkoku in Tokyju s posebnim znanjem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card text-center shadow-sm">
+                            <img src="https://www.delo.si/media/images/20240821/1777544.width-660.format-webp.webp" class="card-img-top img-fluid" alt="Kuhinja 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Jure Horvat</h5>
+                                <p class="card-text"><strong>Maestro burgerjev</strong></p>
+                                <p class="card-text text-muted">Inovativne kombinacije in vrhunski okusi v vsakem burgerju.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- ABOUT SECTION (Preview) -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-5 text-center">O festivalu</h2>
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <img src="https://www.posist.com/restaurant-times/wp-content/uploads/2019/12/grub-fest.jpg" class="img-fluid rounded-3" alt="Festival prizor">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Naša zgodba</h3>
+                    <p class="lead">Festival hrane 2025 se je začel kot majhna pobuda lokalnih kuharjev, ki so hoteli pokazati najboljše, kar ima naša skupnost. Vsako leto narašča in postaja bolj priljubljen med ljubitelji dobre hrane.</p>
+                    <p>Verjamemo v moč lokalnih izdelkov, tradicionalne recepte in inovativno kuhinjo. Vsak obiskovalec festivala dobi možnost, da okusi nekaj posebnega, od znanih klasik do novih in neopravljenih kombinacij. Naš festival je prostor za druženje, zabavo in uživanje v najboljši hrani.</p>
+                    <a href="about.html" class="btn btn-danger mt-3">Preberi več o nas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 Festival hrane. Vse pravice pridržane.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-facebook fs-5"></i></a>
+                    <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="bi bi-twitter fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

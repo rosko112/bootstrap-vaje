@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Festival hrane 2025</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-fire"></i> Festival hrane 2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Domov</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">O festivalu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservations.html">Moje rezervacije</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="py-5 bg-light border-bottom">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Kontakt & Rezervacija</h1>
+            <p class="lead text-muted">Vzemite si mizo in uživajte kulinariko</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- FORMA -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Rezerviraj mizo</h4>
+                            <form id="reservationForm" novalidate>
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Ime in priimek</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Vnesite vaše ime" required>
+                                    <div class="invalid-feedback">
+                                        Prosimo, vnesite svoje ime in priimek.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="primer@email.com" required>
+                                    <div class="invalid-feedback">
+                                        Prosimo, vnesite veljaven email naslov.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Telefon</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="+386 1 400 5000">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="guests" class="form-label">Število oseb</label>
+                                    <select class="form-select" id="guests" required>
+                                        <option value="">-- Izberite --</option>
+                                        <option value="1">1 oseba</option>
+                                        <option value="2">2 osebi</option>
+                                        <option value="3">3 osebe</option>
+                                        <option value="4">4 osebe</option>
+                                        <option value="5">5 oseb</option>
+                                        <option value="6+">6 ali več oseb</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Prosimo, izberite število oseb.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="reservationDate" class="form-label">Datum in ura</label>
+                                    <input type="datetime-local" class="form-control" id="reservationDate" required>
+                                    <div class="invalid-feedback">
+                                        Prosimo, izberite datum in uro.
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Posebne zahteve (opciono)</label>
+                                    <textarea class="form-control" id="message" rows="3" placeholder="Navedite posebne zahteve (alergije, preference itd.)"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-danger w-100">Pošlji rezervacijo</button>
+                            </form>
+                            <div id="successMessage" class="alert alert-success mt-3" style="display: none;">
+                                <i class="bi bi-check-circle"></i> Vaša rezervacija je bila uspešno poslana! Preprečeno vam bo poslano potrdilo na email.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KONTAKTNI PODATKI -->
+                <div class="col-lg-6">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Kontaktni podatki</h4>
+                            <div class="mb-4">
+                                <p><i class="bi bi-geo-alt-fill text-danger"></i> <strong>Naslov:</strong></p>
+                                <p class="ms-4">Ulica Festivalske hrane 42<br>1000 Ljubljana, Slovenija</p>
+                            </div>
+                            <div class="mb-4">
+                                <p><i class="bi bi-telephone-fill text-danger"></i> <strong>Telefon:</strong></p>
+                                <p class="ms-4"><a href="tel:+38614005000">+386 (1) 400-5000</a></p>
+                            </div>
+                            <div class="mb-4">
+                                <p><i class="bi bi-envelope-fill text-danger"></i> <strong>Email:</strong></p>
+                                <p class="ms-4"><a href="mailto:info@festivalhrane.si">info@festivalhrane.si</a></p>
+                            </div>
+                            <div class="mb-4">
+                                <p><i class="bi bi-clock-fill text-danger"></i> <strong>Odpiralni čas:</strong></p>
+                                <p class="ms-4">Ponedeljek - Nedelja: 10:00 - 23:00<br><small class="text-muted">(Festival poteka od aprila do septembra)</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOCIALNI MEDIJI -->
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Sledite nam na socialnih omrežjih</h5>
+                            <div class="d-flex gap-3 justify-content-start">
+                                <a href="#" class="btn btn-outline-danger rounded-circle p-2" aria-label="Facebook">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger rounded-circle p-2" aria-label="Instagram">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger rounded-circle p-2" aria-label="Twitter">
+                                    <i class="bi bi-twitter fs-5"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-danger rounded-circle p-2" aria-label="YouTube">
+                                    <i class="bi bi-youtube fs-5"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GOOGLE MAP -->
+            <div class="mt-5">
+                <h3 class="mb-3">Naša lokacija</h3>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.6843190197327!2d14.5057!3d46.0569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476295b7e6e6e6e7%3A0x0!2sLjubljana!5e0!3m2!1ssl!2ssi!4v1234567890" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Pogosto postavljena vprašanja</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Kako lahko dam rezervacijo?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Rezervacijo lahko naredite z izpolnitvijo obrazca na tej strani. Vnesite vaš podatke, izberite datum in uro ter vnesite posebne zahteve, če jih imate.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Koliko časa preden pridem, moram narediti rezervacijo?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Priporočamo, da rezervacijo naredite vsaj 24 ur pred prihodom. V primeru čim bližje prihoda, nas prosimo kontaktirajte na telefon.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Ali je mogoče plačati s kreditno kartico?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Da, sprejemamo vse glavne kreditne kartice (Visa, Mastercard) ter tudi gotovino. Plačilo se vrši na kraju.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Kaj storiti, če imam alergijo na hrano?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Prosimo, da v polju "Posebne zahteve" navedete vaše alergije. Naš kuhinarski tim bo to upošteval pri pripravi vaše hrane.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Ali je možno spremeniti ali preklicati rezervacijo?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Da, spremembe in preklice je mogoče narediti do 24 ur pred rezerviranim časom. Kontaktirajte nas na email ali telefon.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2026 Festival hrane. Vse pravice pridržane.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-facebook fs-5"></i></a>
+                    <a href="#" class="text-white me-3 text-decoration-none"><i class="bi bi-instagram fs-5"></i></a>
+                    <a href="#" class="text-white text-decoration-none"><i class="bi bi-twitter fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

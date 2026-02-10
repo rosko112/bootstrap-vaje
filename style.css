@@ -1,0 +1,345 @@
+/* ===================================
+   CUSTOM CSS - Festival hrane 2025
+   =================================== */
+
+/* GENERAL STYLES */
+:root {
+    --primary-color: #dc3545;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR CUSTOMIZATION */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand i {
+    margin-right: 0.5rem;
+    color: #dc3545;
+}
+
+/* CAROUSEL STYLES */
+#carouselFestival {
+    height: 600px;
+}
+
+.carousel-item {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Carousel background images using CSS */
+.carousel-image-1 {
+    background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1200&h=600&fit=crop');
+}
+
+.carousel-image-2 {
+    background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1200&h=600&fit=crop');
+}
+
+.carousel-image-3 {
+    background-image: url('https://images.unsplash.com/photo-1545521521-c81c6c10f79c?w=1200&h=600&fit=crop');
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-title {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    animation: slideInDown 0.8s ease-out;
+}
+
+.carousel-overlay .btn {
+    animation: slideInUp 0.8s ease-out;
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE CAROUSEL */
+@media (max-width: 768px) {
+    #carouselFestival {
+        height: 350px;
+    }
+
+    .carousel-item {
+        height: 350px;
+    }
+
+    .carousel-title {
+        font-size: 1.8rem;
+    }
+
+    .carousel-overlay .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselFestival {
+        height: 280px;
+    }
+
+    .carousel-item {
+        height: 280px;
+    }
+
+    .carousel-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-overlay .btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* CARD STYLES */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+/* SECTION HEADINGS */
+section h2 {
+    font-weight: bold;
+    color: var(--dark-color);
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* FORM VALIDATION */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: var(--primary-color);
+}
+
+.invalid-feedback {
+    display: block;
+    color: var(--primary-color);
+    font-size: 0.875rem;
+}
+
+/* BUTTONS */
+.btn-danger {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+    transform: scale(1.02);
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    transition: transform 0.3s ease;
+}
+
+footer a:hover {
+    transform: scale(1.2);
+}
+
+/* CONTACT CARD ICONS */
+.card-body p i {
+    margin-right: 0.5rem;
+}
+
+/* SMOOTH SCROLL ANCHOR LINKS */
+html {
+    scroll-padding-top: 70px;
+}
+
+/* ACCESSIBILITY */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SPECIAL TYPOGRAPHY */
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* GRID RESPONSIVE ADJUSTMENTS */
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* SHADOW EFFECTS */
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+/* ABOUT SECTION ALIGNMENT */
+#about .row {
+    display: flex;
+    align-items: center;
+}
+
+/* CONTACT SECTION SPACING */
+#contact .card {
+    border-top: 3px solid var(--primary-color);
+}
+
+/* SOCIAL ICONS IN FOOTER */
+footer .bi {
+    transition: color 0.3s ease;
+}
+
+footer a:hover .bi {
+    color: var(--primary-color);
+}
+
+/* TIMELINE STYLES */
+.timeline {
+    position: relative;
+    padding: 0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.timeline-dot::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 3rem);
+    background-color: #ddd;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+
+.timeline-item:last-child .timeline-dot::before {
+    display: none;
+}
+
+.timeline-content h5 {
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #666;
+}
